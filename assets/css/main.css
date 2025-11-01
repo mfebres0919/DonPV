@@ -12678,3 +12678,7 @@ input[type=color] {
   background-clip: text;
   color: transparent;
 }
+
+.px-capsule-inner {
+  margin-top: 4rem;
+}
