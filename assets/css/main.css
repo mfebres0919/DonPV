@@ -1799,6 +1799,14 @@ input[type=color] {
   width: 100%;
 }
 
+
+@media (min-width: 1200px) {
+  .header-transparent {
+    padding: 2rem;
+  }
+}
+
+
 .header-fixed {
   position: fixed;
   top: 0;
@@ -1908,7 +1916,7 @@ input[type=color] {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .px-header-menu > nav > ul > li a {
-    font-size: 15px;
+    font-size: 25px;
   }
 }
 .px-header-menu.tp-header-dropdown nav ul li.has-dropdown > a::after {
@@ -4206,12 +4214,12 @@ input[type=color] {
 /*----------------------------------------*/
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
   .px-footer-area {
-    padding-top: 90px;
+    padding-top: 20px;
   }
 }
 @media (max-width: 767px) {
   .px-footer-area {
-    padding-top: 80px;
+    padding-top: 20px;
   }
 }
 .px-footer-col-2 {
@@ -5077,6 +5085,15 @@ input[type=color] {
   .px-hero-title-wrap {
     padding-bottom: 70px;
   }
+
+  .px-hero-info p {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.4;
+  margin-bottom: 25px;
+  letter-spacing: -0.04em;
+  color: var(--tp-common-px-white);
+}
 }
 @media (max-width: 767px) {
   .px-hero-title-wrap {
@@ -5085,7 +5102,7 @@ input[type=color] {
 }
 .px-hero-info p {
   font-weight: 600;
-  font-size: 22px;
+  font-size: 32px;
   line-height: 1.4;
   margin-bottom: 25px;
   letter-spacing: -0.04em;
@@ -8893,7 +8910,7 @@ input[type=color] {
   transition: none;
 }
 .px-capsule-item {
-  font-size: 32px;
+  font-size: 22px;
   height: 160px;
   width: 160px;
   display: inline-flex;
@@ -10520,13 +10537,13 @@ input[type=color] {
 /*----------------------------------------*/
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
   .px-contact-ptb {
-    padding-top: 160px;
+    padding-top: 100px;
   }
 }
 @media (max-width: 767px) {
   .px-contact-ptb {
     padding-top: 130px;
-    padding-bottom: 80px;
+    padding-bottom: 20px;
   }
 }
 .px-contact-title {
@@ -10549,7 +10566,7 @@ input[type=color] {
 }
 @media only screen and (min-width: 1600px) and (max-width: 1700px) {
   .px-contact-title {
-    font-size: 400px;
+    font-size: 300px;
   }
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px) {
@@ -10559,8 +10576,13 @@ input[type=color] {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .px-contact-title {
-    font-size: 300px;
+    font-size: 200px;
   }
+
+  .text-white .px-contact-title {
+    font-size: 250px;
+  }
+
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .px-contact-title {
@@ -10584,7 +10606,7 @@ input[type=color] {
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .px-contact-heading {
-    margin-bottom: 30px;
+    margin-bottom: 80px;
   }
 }
 .px-contact-inf {
@@ -11699,6 +11721,7 @@ input[type=color] {
 }
 .pixora-dark .px-contact-title {
   color: var(--tp-common-px-white);
+  margin-top: 2rem;
 }
 .pixora-dark .px-contact-inf-title {
   color: var(--tp-common-px-white);
@@ -12486,7 +12509,7 @@ input[type=color] {
 }
 
 .px-award-title-wrap .px-section-title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-family: "Antic Didone", serif;
 }
 
@@ -12707,9 +12730,6 @@ input[type=color] {
     width: 15% !important;
   }
 
-  .px-project-title-box h3, p {
-    text-align: center;
-  }
 
   .px-project-title-box  h3 {
     font-size: 5rem !important;
@@ -12749,3 +12769,51 @@ input[type=color] {
 .px-capsule-inner {
   margin-top: 4rem;
 }
+
+
+.col-xl-12 {
+  margin-bottom: 2.5rem;
+}
+
+.px-copyright-content {
+  margin-bottom: 2.5rem;
+}
+
+
+/* LOGO SIZE */
+
+/* Adjust the logo size in the header */
+.px-header-logo img {
+  width: 120px;     /* increase this to make it larger */
+  height: auto;     /* keeps proportions correct */
+}
+
+/* Optional: slightly larger on desktops */
+@media (min-width: 1200px) {
+  .px-header-logo img {
+    width: 160px;
+  }
+
+  .px-header-menu > nav > ul > li a {
+    font-size: 25px;
+  }
+
+}
+
+
+@media (min-width: 760px) {
+  .mt-15  {
+    font-size: 1.2rem;
+  }
+  }
+
+.px-hero-subtitle  {
+  font-size: 2.2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.px-hero-title {
+  padding-top: 2.5rem;
+}
+
